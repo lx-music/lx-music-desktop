@@ -53,6 +53,14 @@ export default {
       return this.info.meta?.qualitys?.filter(quality => this.checkSource(quality.type)) || []
     },
   },
+
+  beforeUnmount() {
+    document.removeEventListener('keyup', this.handleEscKey)
+  },
+  mounted() {
+    document.addEventListener('keyup', this.handleEscKey)
+  },
+
   methods: {
     handleClick(quality) {
       void createDownloadTasks([this.musicInfo], quality, this.listId)
@@ -60,6 +68,11 @@ export default {
     },
     handleClose() {
       this.$emit('update:show', false)
+    },
+    handleEscKey(event) {
+      if (event.key === 'Escape') {
+        this.handleClose()
+      }
     },
     getTypeName(quality) {
       switch (quality) {
