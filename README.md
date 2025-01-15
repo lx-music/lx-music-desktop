@@ -47,29 +47,31 @@
 
 *移动版项目地址：https://github.com/lyswhut/lx-music-mobile*
 
-软件变化请查看 [更新日志](https://github.com/lyswhut/lx-music-desktop/blob/master/CHANGELOG.md)。
+软件变化请查看[更新日志](https://github.com/lyswhut/lx-music-desktop/blob/master/CHANGELOG.md)。
 
 软件下载请查看 [GitHub Releases](https://github.com/lyswhut/lx-music-desktop/releases)。
 
+使用常见问题请参阅[桌面版常见问题](https://lyswhut.github.io/lx-music-doc/desktop/faq)。
+
 目前本项目的原始发布地址只有 [**GitHub Releases**](https://github.com/lyswhut/lx-music-desktop/releases)，其他渠道均为第三方转载发布，与本项目无关！
 
-为了提高使用门槛，本软件内的默认设置、UI 操作不以新手友好为目标，所以使用前建议先根据你的喜好浏览调整一遍软件设置，阅读一遍 [音乐播放列表机制](https://lyswhut.github.io/lx-music-doc/desktop/faq/playlist) 及 [可用的鼠标、键盘快捷操作](https://lyswhut.github.io/lx-music-doc/desktop/faq/hotkey)。
+为了提高使用门槛，本软件内的默认设置、UI 操作不以新手友好为目标，所以使用前建议先根据你的喜好浏览调整一遍软件设置，阅读一遍[音乐播放列表机制](https://lyswhut.github.io/lx-music-doc/desktop/faq/playlist)及[可用的鼠标、键盘快捷操作](https://lyswhut.github.io/lx-music-doc/desktop/faq/hotkey)。
 
 ### Scheme URL 支持
 
-从 v1.17.0 起支持 Scheme URL，可以使用此功能在浏览器等场景下调用 LX Music，我们开发了一个 [油猴脚本](https://github.com/lyswhut/lx-music-script#readme) 配套使用。
+从 v1.17.0 起支持 Scheme URL，可以使用此功能在浏览器等场景下调用 LX Music，我们开发了一个[油猴脚本](https://github.com/lyswhut/lx-music-script#readme)配套使用。
 
 脚本安装地址：[LX Music 辅助脚本](https://greasyfork.org/zh-CN/scripts/438148)。
 
-若你想自己调用 LX Music，可以参考 [Scheme URL 支持](https://lyswhut.github.io/lx-music-doc/desktop/scheme-url)。
+若你想自己调用 LX Music，可以参考文档「[Scheme URL 支持](https://lyswhut.github.io/lx-music-doc/desktop/scheme-url)」部分。
 
 ### 数据同步服务
 
-从 v2.2.0 起，我们发布了一个独立版的 [数据同步服务](https://github.com/lyswhut/lx-music-sync-server#readme)，如果你有服务器，可以将其部署到服务器上作为私人多端同步服务使用，详情看该项目说明。
+从 v2.2.0 起，我们发布了一个独立的[数据同步服务](https://github.com/lyswhut/lx-music-sync-server#readme)。如果你有服务器，可以将其部署到服务器上作为私人多端同步服务使用，详情看该项目说明。
 
 ### 开放 API 支持
 
-从 v2.7.0 起支持开放 API 服务，启用该功能后，将会在本地启动一个 HTTP 服务，提供播放器相关的接口供第三方软件调用，详情看 [开放 API 文档](https://lyswhut.github.io/lx-music-doc/desktop/open-api)。
+从 v2.7.0 起支持开放 API 服务。启用该功能后，将会在本地启动一个 HTTP 服务，提供播放器相关的接口供第三方软件调用，详情看文档「[开放 API 服务](https://lyswhut.github.io/lx-music-doc/desktop/open-api)」部分。
 
 ### 数据存储目录
 
@@ -79,33 +81,29 @@
 - macOS：`~/Library/Application Support/lx-music-desktop`
 - Windows：`%APPDATA%/lx-music-desktop`
 
-在 Windows 平台上，若程序目录中存在 `portable` 目录，则自动使用此目录作为数据存储目录（适用于 v1.17.0 及以上版本）。
+在 Windows 平台上，若程序文件夹中存在 `portable` 文件夹，则自动使用此文件夹作为数据存储文件夹（适用于 v1.17.0 及以上版本）。
 
 ## 用户界面
 
-<p><a href="https://github.com/lyswhut/lx-music-desktop"><img width="100%" src="https://github.com/lyswhut/lx-music-desktop/blob/master/doc/images/app.png" alt="lx-music desktop UI"></a></p>
-
-## 常见问题
-
-已迁移至：<https://lyswhut.github.io/lx-music-doc/desktop/faq>
+<p><img width="100%" src="./doc/images/app.png" alt="lx-music desktop UI"></p>
 
 ## 贡献代码
 
 本项目欢迎 PR，但为了 PR 能顺利合并，需要注意以下几点：
 
-- 对于添加新功能的 PR，建议在提交 PR 前先创建 issue 进行说明，以确认该功能是否确实需要；
-- 对于修复 bug 的 PR，请提供修复前后的说明及重现方式；
+- 对于添加新功能的 PR，建议在提交 PR 前先创建 Issue 进行说明，以确认该功能是否确实需要。
+- 对于修复 bug 的 PR，请提供修复前后的说明及重现方式。
 - 对于其他类型的 PR，则适当附上说明。
 
 贡献代码步骤：
 
-1. 参照 [源码使用方法](https://lyswhut.github.io/lx-music-doc/desktop/use-source-code) 设置开发环境；
+1. 参照[源码使用方法](https://lyswhut.github.io/lx-music-doc/desktop/use-source-code)设置开发环境；
 2. 克隆本仓库代码并切换至 `dev` 分支进行开发；
 3. 提交 PR 至 `dev` 分支。
 
 ## 源码使用方法
 
-已迁移至：<https://lyswhut.github.io/lx-music-doc/desktop/use-source-code>
+请参阅：<https://lyswhut.github.io/lx-music-doc/desktop/use-source-code>
 
 ## 项目协议
 

@@ -460,7 +460,7 @@
   "setting__list_add_music_location_type": "添加歌曲到列表时的位置",
   "setting__list_add_music_location_type_bottom": "底部",
   "setting__list_add_music_location_type_top": "顶部",
-  "setting__list_click_action": "双击列表里的歌曲时自动切换到当前列表播放（仅对「歌单」、「排行榜」有效）",
+  "setting__list_click_action": "双击列表里的歌曲时自动切换到当前列表播放（仅对「歌单」和「排行榜」有效）",
   "setting__list_scroll": "记住播放列表滚动条位置（仅对「我的列表」有效）",
   "setting__list_source": "显示歌曲来源平台（仅对「我的列表」有效）",
   "setting__network": "网络设置",

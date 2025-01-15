@@ -1,7 +1,7 @@
 <template lang="pug">
 div.comment(ref="dom_container" :class="$style.comment")
   div(:class="$style.commentHeader")
-    h3 {{ $t('comment__title', { name: title }) }}
+    h3 {{ $t('comment__title', { name: currentMusicInfo.name }) }}
     div(:class="$style.commentHeaderBtns")
       div(:class="$style.commentHeaderBtn" :aria-label="$t('comment__refresh')" @click="handleShowComment")
         svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="transform: rotate(45deg);" viewBox="0 0 24 24" space="preserve")
@@ -37,7 +37,6 @@ div.comment(ref="dom_container" :class="$style.comment")
 </template>
 
 <script>
-import { appSetting } from '@renderer/store/setting'
 import { toOldMusicInfo } from '@renderer/utils'
 import music from '@renderer/utils/musicSdk'
 import CommentFloor from './CommentFloor.vue'
@@ -55,11 +54,6 @@ export default {
     },
   },
   emits: ['close'],
-  setup() {
-    return {
-      appSetting,
-    }
-  },
   data() {
     return {
       available: false,
@@ -118,13 +112,6 @@ export default {
         ],
       },
     }
-  },
-  computed: {
-    title() {
-      return this.currentMusicInfo.name
-        ? this.appSetting['download.fileName'].replace('歌名', this.currentMusicInfo.name).replace('歌手', this.currentMusicInfo.singer)
-        : '^-^'
-    },
   },
   watch: {
     show(n) {
