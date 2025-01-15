@@ -16,8 +16,8 @@ dd
     strong 仔细、仔细、仔细
     | 地阅读常见问题后，
   .p.small
-    | 仍有问题可到 GitHub 提交&nbsp;
-    span.hover.underline(:aria-label="$t('setting__click_open')" @click="openUrl('https://github.com/lyswhut/lx-music-desktop/issues')") Issue
+    | 仍有问题可到&nbsp;GitHub&nbsp;
+    span.hover.underline(:aria-label="$t('setting__click_open')" @click="openUrl('https://github.com/lyswhut/lx-music-desktop/issues?q=is%3Aissue+')") 提交&nbsp;Issue
     | 。
   br
   .p.small 由于软件开发的初衷仅是为了对新技术的学习与研究，因此软件直至停止维护都将会一直保持纯净。
@@ -26,12 +26,12 @@ dd
     strong 只有&nbsp;GitHub
     | ，其他渠道均为第三方转载发布，可信度请自行鉴别。
   .p.small
-    strong 本项目「没有」微信公众号之类的所谓「官方账号」，谨防被骗！
+    strong 本项目没有微信公众号之类的所谓「官方账号」，谨防被骗！
 
   .p.small
-    | 你已签署本软件的&nbsp;
+    | 你已签署本软件的
     base-btn(min @click="handleShowPact") 许可协议
-    | ，协议的在线版本在&nbsp;
+    | ，协议的在线版本在
     strong.hover.underline(:aria-label="$t('setting__click_open')" @click="openUrl('https://github.com/lyswhut/lx-music-desktop#%E9%A1%B9%E7%9B%AE%E5%8D%8F%E8%AE%AE')") 这里
     | 。
   br
